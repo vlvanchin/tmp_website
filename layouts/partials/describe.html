@@ -1,0 +1,54 @@
+	<section id="fh5co-describe" data-section="describe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">{{ with .Site.Params.describe.title }}{{ . }}{{ end }}</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 subtext to-animate">
+					<div class="text-editor-wrap">
+						<div class="text-editor-title-bar">
+							<span>Vorto DSL</span>
+						</div>
+						<div class="text-editor-text-body">
+							<div id="typed-strings">
+								<p>temperature <span class="keyword">as</span> Temperature<br/>
+								location <span class="keyword">as</span> Location
+								</p>
+							</div>
+							<div>
+								<p><span class="keyword">namespace</span> org.eclipse.vorto<br/>
+								<span class="keyword">version</span> <span class="version-number">2.0.0</span><br/>
+								<span class="keyword">displayname</span> <span class="string">"Fridge Freezer"</span><br/>
+								<span class="keyword">description</span> <span class="string">"Information model for Fridge Freezer"</span><br/>
+								<br/>
+								<span class="keyword">using</span> org.eclipse.vorto.Location; <span class="version-number">2.0.0</span><br/>
+								<span class="keyword">using</span> org.eclipse.vorto.Temperature; <span class="version-number">2.0.0</span><br/>
+								<br/>
+								<span class="keyword">infomodel</span> FridgeFreezer{<br/>
+								<span class="keyword">functionblocks</span> {<br/>
+									<div style="margin-left:30px;">
+										<span id="typed"></span>
+									</div>
+								<br/>
+								}<br/></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 text-center">
+					<div class="row">
+						<div class="col-md-12 subtext to-animate">
+							<h3 class="text-black">{{ with .Site.Params.describe.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center to-animate">
+					<p>{{ .Site.Params.describe.footertext | markdownify }}</p>
+				</div>
+			</div>
+		</div>
+	</section>

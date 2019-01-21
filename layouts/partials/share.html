@@ -1,0 +1,26 @@
+	<section id="fh5co-share" data-section="share">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">{{ with .Site.Params.share.title }}{{ . }}{{ end }}</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 text-center">
+					<div class="row">
+						<div class="col-md-12 subtext to-animate">
+							<h3 class="text" style="color:black">{{ with .Site.Params.share.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 subtext to-animate">
+					<img class="img-responsive" width="90%" src="images/share.png" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center to-animate">
+					<p>{{ .Site.Params.share.footertext | markdownify }}</p>
+				</div>
+			</div>
+		</div>
+	</section>

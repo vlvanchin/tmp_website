@@ -1,0 +1,23 @@
+	<section id="fh5co-summary" data-section="summary">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">{{ with .Site.Params.summary.title }}{{ . | markdownify }}{{ end }}</h2>
+					<div class="row">
+						<div class="col-md-12 subtext to-animate">
+							<h3 style="text-align: left;">{{ with .Site.Params.summary.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+				</div>
+			</div>
+			<div class="row">
+			{{ range .Site.Params.summary.item }}
+				<div class="col-md-6 col-sm-6 fh5co-summary to-animate">
+					<i class="icon to-animate-2 {{ .icon | markdownify }}"></i>
+					<h3>{{ .title | markdownify }}</h3>
+					<p>{{ .description | markdownify }}</p>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+			{{ end }}
+			</div>
+		</div>
+	</section>

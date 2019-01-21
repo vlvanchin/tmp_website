@@ -1,0 +1,279 @@
+baseURL = "http://localhost:1313"
+title = "Elate theme"
+languageCode = "en-us"
+theme = "hugo-elate-theme"
+
+[params]
+  custom_css = ["css/style_vorto.css"]
+  # Meta
+  author = ""
+  description = ""
+  email = ""
+
+  # Navigation
+  [params.navigation]
+    brand = "Eclipse Vorto"
+    summary = "Summary"
+    work = "Case Studies"
+    testimonials = "Testimonials"
+    about = "Contributors"
+    contact = "Contact"
+
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+    # prepended links
+    [[menu.prepend]]
+      url = "https://github.com/eclipse/vorto/blob/development/docs/gettingstarted.md"
+      name = "Getting started"
+      weight = 10
+
+    [[menu.prepend]]
+      url = "https://github.com/eclipse/vorto/blob/development/docs/release-notes.md"
+      name = "Release Notes"
+      weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "https://github.com/eclipse/vorto"
+      name = "<i style='font-size: 30px' class='icon-github'></i>"
+      weight = 20
+
+  # Hero section
+  [params.hero]
+    title = "<img src='./images/vorto.png'/>"
+    subtitle = 'Vorto enables a real interoperable eco system for the iot world. <p><a href="https://vorto.eclipse.org/console/" target="_blank" class="btn btn-primary">try it out!</a></p>'
+  [[params.hero.item]]
+    content = '<p><a href="https://vorto.eclipse.org/console/" target="_blank" class="btn btn-primary" style="width: 170px">try demo</a></p>'
+  [[params.hero.item]]
+    content = '<p><a href="https://vorto.eclipse.org/" target="_blank" class="btn btn-primary" style="width: 170px">Search devices</a></p>'
+
+  # Intro section
+  [params.intro]
+  [[params.intro.item]]
+    title = "Describe"
+    description = "Vorto provides a simple language to describe IoT device capabilities."
+    url = "#fh5co-describe"
+    button = "Start today"
+    icon = "icon-doc"
+    img = "img_7.jpg"
+
+  [[params.intro.item]]
+    title = "Share"
+    description = "The Vorto Repository is an open platform to share and manage Vorto descriptions."
+    url = "#fh5co-share"
+    button = "Check it out"
+    icon = "icon-share"
+    img = "img_8.jpg"
+
+  [[params.intro.item]]
+    title = "Integrate"
+    description = "Vorto provides tools and libraries to integrate devices with various IoT platforms and solutions."
+    url = "#fh5co-integrate"
+    button = "Learn more"
+    icon = "icon-link"
+    img = "img_10.jpg"
+
+  [params.summary]
+    enable = false
+    title = "summary"
+    description = "In conventional IoT solution development, developers build solutions that only “understand” a limited set of devices. Each device requires a lot of plumbing and wiring to connect the device to the IoT solution, such as dealing with the device’s protocols and data structures. Eclipse Vorto takes a completely technology-independent approach – and this eventually makes it easier to implement standards. What are known as information models provide an abstract description of device properties and functions. These information models can then be managed and made available through the Vorto Repository. This means device manufacturers can release information models for users to download; so users can integrate their devices far more easily."
+
+  [params.describe]
+    enable = true
+    title = "Describe"
+    description = "The Vorto language is developed based on other, well known programming languages like Java, but with the focus to express device functionality in a clean and slick way. It is both intuitive to understood by people and processable by machines. By leveraging this DSL you can describe the capabilities and functionality of a device as an Information Model. Information Models are assembled from re-usable, abstract and technology-agnostic Function Blocks. IoT Solutions process the Function Block specific data, to be able to stay agnostic of the actual device(s). Click [here] (https://github.com/eclipse/vorto/blob/development/docs/tutorials/describe_tisensor.md) to learn how describe your own device."
+    footertext = ""
+
+  [params.share]
+    enable = true
+    title = "Share"
+    description = "The Vorto Repository is an open platform where device manufacturers share Information Models of devices with other IoT Stakeholders."
+    footertext = ""
+
+  [params.integrate]
+    enable = true
+    title = "Integrate"
+    description = "Vorto provides an SDK which helps IoT developers to integrate described devices with IoT platforms in order to build rich IoT solutions. It helps to reduce development time and reduces the entry barrier for new developers."
+    footertext = ""
+
+# Work section
+  [params.work]
+    enable = true
+    title = "Case studies"
+    description = "Take a look at a few interesting Vorto Case Studies, illustrating the usage of Vorto in real-world IoT Projects."
+    footertext = ""
+
+    [[params.work.row]]
+      img = "use_case1.jpg"
+      href = "https://blog.bosch-si.com/developer/avoid-tight-coupling-of-devices-in-iot-solutions/"
+      alt = "Image6"
+      title = "Bosch Security Camera Integration"
+      subtitle = "Read how Vorto integrates Bosch Security Cameras with Bosch IoT Suite."
+
+  # Testimonials section
+  [params.testimonials]
+    enable = true
+    title = "Testimonials"
+    description = "See what our users have to say about Vorto."
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Vorto serves as the intermediary among all the IoT protocols and brings a common understanding to device data. Additionally the code generation infrastructure enables rapid prototyping and easy integration of IoT devices and platforms.&rdquo;"
+      person = 'Oliver Meili,</br>Head of IoT Development - Bosch'
+      img = "person-meili-oliver.jpg"
+      alt = "Person1"
+
+    [[params.testimonials.item]]
+      quote = "&ldquo;Vorto provides an excellent technology stack to develop platform-agnostic IoT solutions.&rdquo;"
+      person = 'Preston Holmes,</br>Head of IoT Solutions - Google'
+      img = "person-holmes-preston.jpg"
+      alt = "Person2"
+
+
+  # about section
+  [params.about]
+    enable = true
+    title = "Contributors"
+    description = "The Vorto Project is an open source iniative of the Eclipse Foundation, the following companies have contributed to the codebase."
+
+
+    [[params.about.item]]
+      name = "Robert Bosch GmbH"
+      position = "Contributor"
+      img = "icon-bosch.png"
+      alt = "Person1"
+      description = ""
+      social = [
+        ["icon-twitter", "https://twitter.com/BoschSI"],
+        ["icon-facebook", "https://www.facebook.com/BoschGlobal"],
+        ["icon-github", "https://github.com/bsinno"]
+      ]
+
+    [[params.about.item]]
+      name = "ThingWorx"
+      position = "Contributor"
+      img = "icon-thingworx.png"
+      description = ""
+      alt = "FZI"
+      social = [
+        ["icon-twitter", "https://twitter.com/ThingWorx"],
+      ]
+
+    [[params.about.item]]
+      name = "IAS Universität Stuttgart"
+      position = "Contributor"
+      img = "icon-unistuttgart.png"
+      description = ""
+      alt = "FZI"
+      social = [
+        ["icon-twitter", "https://twitter.com/uni_stuttgart?lang=en"],
+        ["icon-facebook", "https://www.facebook.com/pages/category/Education/IAS-Institut-f%C3%BCr-Automatisierungs-und-Softwaretechnik-149418635158364/"],
+      ]
+
+
+    [[params.about.item]]
+      name = "FZI"
+      position = "Contributor"
+      img = "icon-fzi.png"
+      description = ""
+      alt = "FZI"
+      social = [
+        ["icon-twitter", "https://twitter.com/fzi_official"],
+        ["icon-facebook", "https://www.facebook.com/pg/FZI.Official/"],
+        ["icon-github", "https://github.com/fzi-forschungszentrum-informatik"]
+      ]
+
+    [[params.about.item]]
+      name = "Eclipse Foundation"
+      position = "Open Source Organization"
+      img = "icon-eclipse.png"
+      alt = "Person3"
+      description = ""
+      social = [
+        ["icon-twitter", "https://twitter.com/EclipseFdn"],
+        ["icon-facebook", "https://www.facebook.com/eclipse.org/"],
+        ["icon-github", "https://github.com/eclipse"]
+      ]
+
+    [[params.about.item]]
+      name = "Hahn Schickard"
+      position = "Contributor"
+      img = "icon-hahnschickard.png"
+      description = ""
+      alt = "FZI"
+      social = [
+        ["icon-twitter", "https://twitter.com/hahnschickard"],
+        ["icon-facebook", "https://www.facebook.com/hahnschickard/"],
+        ["icon-github", "https://github.com/Hahn-Schickard"]
+      ]
+
+  # Counters section
+  [params.counters]
+    enable = true
+    title = "Stats"
+    background = "full_image_1.jpg"
+
+    [[params.counters.item]]
+      description = "Described devices"
+      icon = "icon-layers"
+      from = 0
+      to = 1207
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Vorto Plugins/Add-ons"
+      icon = "icon-wrench"
+      from = 0
+      to = 17
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Lines of Code"
+      icon = "icon-list"
+      from = 0
+      to = 86112
+      interval = 50
+      speed = 5000
+
+    [[params.counters.item]]
+      description = "Github stars"
+      icon = "icon-star"
+      from = 0
+      to = 82
+      interval = 50
+      speed = 5000
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = false
+    form = true
+    title = "Contact"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    details = [
+        ["icon-home", "11 Bishan Street 21 Singapore"],
+        ["icon-envelope", '<a href="mailto:vorto-dev@eclipse.org">vorto-dev@eclipse.org</a>'],
+        ["icon-globe", '<a href="http://vorto.eclipse.org/" target="_blank">Vorto</a>']
+      ]
+
+    name = "Name"
+    email = "Email"
+    message = "Message"
+    button = "Send message"
+
+  # Footer section
+  [params.footer]
+    enable = true
+	copyright = [
+			[ "Copyright Agent", "https://www.eclipse.org/legal/copyright.php"],
+			[ "Legal", "https://www.eclipse.org/legal/"],
+			[ "Terms of Use", "https://www.eclipse.org/legal/termsofuse.php"],
+			["Privacy", "https://www.eclipse.org/legal/privacy.php"],
+			["Community", "https://github.com/eclipse/vorto/blob/development/docs/community.md"],
+		]
+    links = [
+        ["icon-twitter", "#twitter"],
+        ["icon-facebook", "#facebook"],
+        ["icon-youtube", "#youtube"]
+]
