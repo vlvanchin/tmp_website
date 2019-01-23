@@ -250,7 +250,7 @@ theme = "hugo-elate-theme"
     map = false
     form = true
     title = "Contact"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "To reach out to use just send us an email."
     details = [
         ["icon-home", "11 Bishan Street 21 Singapore"],
         ["icon-envelope", '<a href="mailto:vorto-dev@eclipse.org">vorto-dev@eclipse.org</a>'],
