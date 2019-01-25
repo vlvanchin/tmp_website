@@ -130,7 +130,7 @@ theme = "hugo-elate-theme"
 
     [[params.testimonials.item]]
       quote = "&ldquo;Eclipse Vorto provides developers important capabilities for delivering IoT solutions which are platform and language independent.&rdquo;"
-      person = 'Mike Milinkovich,</br>Executive Directory of Eclipse'
+      person = 'Mike Milinkovich,</br>Executive Director - Eclipse'
       img = "person-mike-milinkovich.jpg"
       alt = "Person3"
 
