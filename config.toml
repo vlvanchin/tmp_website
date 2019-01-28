@@ -8,7 +8,7 @@ theme = "hugo-elate-theme"
   # Meta
   author = ""
   description = ""
-  email = ""
+  email = "vorto-development@bosch-si.com"
 
   # Navigation
   [params.navigation]
@@ -263,7 +263,7 @@ theme = "hugo-elate-theme"
       ]
 
     name = "Name"
-    email = "Email"
+    email = "vorto-development@bosch-si.com"
     message = "Message"
     button = "Send message"
 
