@@ -1,5 +1,5 @@
-baseURL = "http://localhost:1313"
-title = "Elate theme"
+baseURL = "https://eclipse.org/vorto"
+title = "Vorto"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
 
@@ -251,7 +251,7 @@ theme = "hugo-elate-theme"
 
   # Contact section
   [params.contact]
-    enable = true 
+    enable = true
     map = false
     form = true
     title = "Contact"
