@@ -5,5 +5,6 @@ aliases: [
            "/userguide",
            "/developerguide",
            "/tutorials",
+           "/userguide/quickhelp_dsl",
          ]
 ---
