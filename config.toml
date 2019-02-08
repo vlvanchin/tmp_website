@@ -258,7 +258,7 @@ theme = "hugo-elate-theme"
     description = "To reach out to use just send us an email."
     details = [
         ["icon-home", "11 Bishan Street 21 Singapore"],
-        ["icon-envelope", '<a href="mailto:vorto-development@bosch-si.com">Vorto Development Team</a>'],
+        ["icon-envelope", '<a href="mailto:vorto-dev@eclipse.org">vorto-dev@eclipse.org</a>'],
         ["icon-globe", '<a href="http://vorto.eclipse.org/" target="_blank">Vorto</a>']
       ]
 
